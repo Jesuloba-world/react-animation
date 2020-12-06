@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	top: 30%;
 	left: 25%;
+	backface-visibility: hidden;
 	width: 50%;
 	transition: all 0.5s ease-out;
 }
@@ -24,12 +25,12 @@
 @keyframes openModal {
 	0% {
 		opacity: 0;
-		transform: translateY(-100vh);
+		transform: translateY(-100%);
 	}
 
 	50% {
-		opacity: 1;
-		transform: translateY(20vh);
+		opacity: 0.6;
+		transform: translateY(20%);
 	}
 
 	100% {
@@ -46,11 +47,11 @@
 
 	50% {
 		opacity: 0.8;
-		transform: translateY(20vh);
+		transform: translateY(60%);
 	}
 
 	100% {
 		opacity: 0;
-		transform: translateY(-100vh);
+		transform: translateY(-100%);
 	}
 }
